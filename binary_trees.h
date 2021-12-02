@@ -89,4 +89,14 @@ int btia_helper(const binary_tree_t *tree, int low, int hi);
 int btih_helper(const binary_tree_t *tree);
 void sata_helper(avl_t **root, int *array, size_t lo, size_t hi);
 
+/*114*/
+bst_t *inorder_successor(bst_t *root);
+bst_t *bst_delete(bst_t *root, bst_t *node);
+bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value);
+/*121*/
+size_t height(const binary_tree_t *tree);
+int balance(const binary_tree_t *tree);
+avl_t *avl_insert_recursive(avl_t **tree, avl_t *parent,
+			    avl_t **new, int value);
+
 #endif
